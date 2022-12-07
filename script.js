@@ -7,7 +7,7 @@ inputBtn.addEventListener("click", function () {
     const li = document.createElement("li");
 
 
-    li.textContent = "exempel";
+    li.textContent = "Exempel";
 
     const button = document.createElement("button");
     button.textContent = "Ta bort"
@@ -20,7 +20,7 @@ inputBtn.addEventListener("click", function () {
     button2.textContent = "Markera"
     button2.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
-        e.target.parentElement.highlight();
+        e.target.parentElement.style.color = "green"; 
     });
 
 
