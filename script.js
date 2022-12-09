@@ -9,22 +9,21 @@ matInput.addEventListener("click", function () {
     const li = document.createElement("li");
 
     // the value in the input box is logged out. 
-    //  Li gets its text content of same value as text typed in input form
     console.log(document.getElementById("mat").value);
 
+//  Li gets its text content of same value as text typed in input form
     li.textContent = document.getElementById("mat").value;
 
     // Make the page to not reload when the user presses submit
     function myFunction(event) { event.preventDefault() }
-    // the value in the input box is logged out
-    console.log(document.getElementById("mat"));
 
     // Connects the submit button of the form with the function myFunction
     document.getElementById("myForm").addEventListener("submit", myFunction);
 
-    // Create three buttons for deleting, highlighting and checking off food items
+    // Create three buttons for deleting, highlighting and checking off food items & // Adding a CSS class to buttons for styling
     const button = document.createElement("button");
     button.textContent = "Ta bort";
+    button.classList.add("myButton");
     button.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
         e.target.parentElement.remove();
@@ -32,8 +31,6 @@ matInput.addEventListener("click", function () {
 
     const button2 = document.createElement("button");
     button2.textContent = "Markera"
-    // Adding a CSS class to buttons for styling
-    button.classList.add("myButton");
     button2.classList.add("myButton");
     button2.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
@@ -50,12 +47,10 @@ matInput.addEventListener("click", function () {
 
     });
 
-
-
+    // Connecting each child element to its parent element 
     ulEl.appendChild(li);
     li.appendChild(button);
     li.appendChild(button2);
     li.appendChild(button3);
-
 
 })

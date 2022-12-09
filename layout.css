@@ -7,33 +7,37 @@ body {
   padding: 2px;
   color: mediumvioletred;
   text-align: center;
-  width: 600px;
+  width: 900px;
   border-radius: 50px;
   border: solid 1px gray;
   margin-left: 110px;
-  font-size: larger;
+}
 
+h1 {
+  margin-left: 375px;
+  color: mediumvioletred;
 }
 
 .addBtn {
   padding: 10px;
-  width: 50%;
+  width: 25%;
   background: mediumvioletred;
   color: white;
   float: left;
   text-align: center;
   font-size: 20px;
   border-radius: 50px;
-  margin-left: 150px;
+  margin-left: 325px;
   border: solid 1px gray;
 }
 
 
 ul {
-  justify-items: right;
-  padding: 80px;
+  justify-items: left;
+  padding: 60px;
   width: 900px;
-  margin-left: 20px;
+  margin-left: 50px;
+
 }
 
 ul li {
@@ -44,11 +48,13 @@ ul li {
   border-radius: 50px;
   border: solid 1px gray;
   list-style-position: inside;
-  list-style: disc; color: rgb(34, 17, 17); font-style: italic; font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; 
- list-style-type: disc;
+  list-style: disc;
+  color: rgb(34, 17, 17);
+  font-style: italic;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  list-style-type: disc;
 }
-
-
 
 ul li:hover {
   background: silver;
@@ -57,7 +63,12 @@ ul li:hover {
 .checked {
   text-decoration: line-through;
   color: black
-} 
+}
+
+/* .un-checked {
+color: blue;
+text-decoration: dashed;
+} */
 
 input {
   margin: 0;
@@ -75,19 +86,16 @@ input {
   height: 20px;
 }
 
-
-h1 {
-  margin-left: 200px;
-  color: mediumvioletred;
+.marked {
+  background-color: olivedrab;
 }
 
-.marked {background-color: olivedrab;}
-
-
 .myButton {
-  background-color: #50bc7b; margin-left: 100px; 
-padding: 5px; border-radius: 20px; color: mediumvioletred; font-size: 21px;}
-
-
-
-
+  background-color: #50bc7b;
+  margin-left: 100px;
+  padding: 5px;
+  border-radius: 20px;
+  color: mediumvioletred;
+  font-size: 21px;
+  width: fit-content;
+}
