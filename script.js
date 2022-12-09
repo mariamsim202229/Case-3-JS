@@ -1,16 +1,30 @@
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+// Connecting HTML elements to Javascript 
+const mat = document.getElementById("mat");
+const matInput = document.getElementById("mat-input");
+const ulEl = document.getElementById("ul-el");
 
-inputBtn.addEventListener("click", function () {
-    inputEl.value = "" //input fält blir tom efter knappen klickas
+
+// A new li element is created each time the input button is clicked by the user
+matInput.addEventListener("click", function () {
     const li = document.createElement("li");
 
+    // the value in the input box is logged out. 
+    //  Li gets its text content of same value as text typed in input form
+    console.log(document.getElementById("mat").value);
 
-    li.textContent = "Exempel";
+    li.textContent = document.getElementById("mat").value;
 
+    // Make the page to not reload when the user presses submit
+    function myFunction(event) { event.preventDefault() }
+    // the value in the input box is logged out
+    console.log(document.getElementById("mat"));
+
+    // Connects the submit button of the form with the function myFunction
+    document.getElementById("myForm").addEventListener("submit", myFunction);
+
+    // Creat two buttons for deleting and highlighting li element by clicking
     const button = document.createElement("button");
-    button.textContent = "Ta bort"
+    button.textContent = "Ta bort";
     button.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
         e.target.parentElement.remove();
@@ -18,23 +32,38 @@ inputBtn.addEventListener("click", function () {
 
     const button2 = document.createElement("button");
     button2.textContent = "Markera"
+    // Adding a CSS class to buttons for styling
+    button.classList.add("myButton");
+    button2.classList.add("myButton");
     button2.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
-        e.target.parentElement.style.color = "green"; 
+        e.target.parentElement.classList.add("marked");
+
     });
+
+   
+
+    for (var i = 0; i < li.length; i++) {
+        (function (i) {
+            li[i].addEventListener('click', function (event) {
+                event.preventDefault()
+          
+
+            if (li.checked) {
+                console.log("Someone checked...");
+                e.target.li.classList.add("checked");
+            }
+        })
+        })
+
+       
+    }
+
 
 
     ulEl.appendChild(li);
     li.appendChild(button);
     li.appendChild(button2);
-
+    
 
 })
-
-
-
-
-
-
-
-
