@@ -30,15 +30,13 @@ body {
 
 
 ul {
-  display: block;
-  justify-items: center;
+  justify-items: right;
   padding: 80px;
-  width: 600px;
+  width: 900px;
   margin-left: 20px;
 }
 
 ul li {
- 
   padding: 10px 8px 12px 25px;
   background: navajowhite;
   font-size: 16px;
@@ -58,6 +56,7 @@ ul li:hover {
 
 .checked {
   text-decoration: line-through;
+  color: black
 } 
 
 input {
@@ -87,7 +86,7 @@ h1 {
 
 .myButton {
   background-color: #50bc7b; margin-left: 100px; 
-padding: 10px; border-radius: 20px; color: mediumvioletred; font-size: 21px;}
+padding: 5px; border-radius: 20px; color: mediumvioletred; font-size: 21px;}
 
 
 

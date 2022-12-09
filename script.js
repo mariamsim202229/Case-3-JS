@@ -22,7 +22,7 @@ matInput.addEventListener("click", function () {
     // Connects the submit button of the form with the function myFunction
     document.getElementById("myForm").addEventListener("submit", myFunction);
 
-    // Creat two buttons for deleting and highlighting li element by clicking
+    // Create three buttons for deleting, highlighting and checking off food items
     const button = document.createElement("button");
     button.textContent = "Ta bort";
     button.addEventListener("click", function (e) {
@@ -41,29 +41,21 @@ matInput.addEventListener("click", function () {
 
     });
 
-   
+    const button3 = document.createElement("button");
+    button3.textContent = "Check"
+    button3.classList.add("myButton");
+    button3.addEventListener("click", function (e) {
+        console.log("Someone checked...", e.target.parentElement);
+        e.target.parentElement.classList.add("checked");
 
-    for (var i = 0; i < li.length; i++) {
-        (function (i) {
-            li[i].addEventListener('click', function (event) {
-                event.preventDefault()
-          
-
-            if (li.checked) {
-                console.log("Someone checked...");
-                e.target.li.classList.add("checked");
-            }
-        })
-        })
-
-       
-    }
+    });
 
 
 
     ulEl.appendChild(li);
     li.appendChild(button);
     li.appendChild(button2);
-    
+    li.appendChild(button3);
+
 
 })
