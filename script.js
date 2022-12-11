@@ -22,7 +22,7 @@ matInput.addEventListener("click", function () {
 
     // Create three buttons for deleting, highlighting and checking off food items & // Adding a CSS class to buttons for styling
     const button = document.createElement("button");
-    button.textContent = "Ta bort";
+    button.textContent = "Delete";
     button.classList.add("myButton");
     button.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
@@ -30,7 +30,7 @@ matInput.addEventListener("click", function () {
     });
 
     const button2 = document.createElement("button");
-    button2.textContent = "Markera"
+    button2.textContent = "Select"
     button2.classList.add("myButton");
     button2.addEventListener("click", function (e) {
         console.log("Någon klickade...", e.target.parentElement);
@@ -39,7 +39,7 @@ matInput.addEventListener("click", function () {
     });
 
     const button3 = document.createElement("button");
-    button3.textContent = "Check"
+    button3.textContent = "Check-off"
     button3.classList.add("myButton");
     button3.addEventListener("click", function (e) {
         console.log("Someone checked...", e.target.parentElement);

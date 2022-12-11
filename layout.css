@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  margin-left: 375px;
+  margin-left: 450px;
   color: mediumvioletred;
 }
 
@@ -33,7 +33,6 @@ h1 {
 
 
 ul {
-  justify-items: left;
   padding: 60px;
   width: 900px;
   margin-left: 50px;
@@ -43,7 +42,7 @@ ul {
 ul li {
   padding: 10px 8px 12px 25px;
   background: navajowhite;
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.1s;
   border-radius: 50px;
   border: solid 1px gray;
@@ -64,11 +63,6 @@ ul li:hover {
   text-decoration: line-through;
   color: black
 }
-
-/* .un-checked {
-color: blue;
-text-decoration: dashed;
-} */
 
 input {
   margin: 0;
