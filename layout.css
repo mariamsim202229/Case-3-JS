@@ -1,27 +1,31 @@
 body {
   background-color: darkkhaki;
+  background-image: url(armenian-dishes.jpeg); width: 700px; height: 270px;
 }
 
 .header {
   background-color: #50bc7b;
   padding: 2px;
-  color: mediumvioletred;
+  color: darkred;
   text-align: center;
   width: 900px;
   border-radius: 50px;
   border: solid 1px gray;
-  margin-left: 110px;
+  margin-left: 220px;
+  margin-top: 10px;
 }
 
 h1 {
-  margin-left: 450px;
-  color: mediumvioletred;
+  margin-left: 570px;
+  margin-top: 150px;
+  color: white;
+  font-size: 50px;
 }
 
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: mediumvioletred;
+  background: darkred;
   color: white;
   float: left;
   text-align: center;
@@ -35,7 +39,7 @@ h1 {
 ul {
   padding: 60px;
   width: 900px;
-  margin-left: 50px;
+  margin-left: 170px;
 
 }
 
@@ -89,7 +93,7 @@ input {
   margin-left: 100px;
   padding: 5px;
   border-radius: 20px;
-  color: mediumvioletred;
+  color: darkred;
   font-size: 21px;
   width: fit-content;
 }
