@@ -2,10 +2,10 @@
 const mat = document.getElementById("mat");
 const matInput = document.getElementById("mat-input");
 const ulEl = document.getElementById("ul-el");
-
+const formEl = document.getElementById ("myForm");
 
 // A new li element is created each time the input button is clicked by the user
-matInput.addEventListener("click", function () {
+formEl.addEventListener("submit", function (event) { event.preventDefault()
     const li = document.createElement("li");
 
     // the value in the input box is logged out. 
@@ -15,10 +15,10 @@ matInput.addEventListener("click", function () {
     li.textContent = document.getElementById("mat").value;
 
     // Make the page to not reload when the user presses submit
-    function myFunction(event) { event.preventDefault() }
+
 
     // Connects the submit button of the form with the function myFunction
-    document.getElementById("myForm").addEventListener("submit", myFunction);
+    // document.getElementById("myForm").addEventListener("submit", myFunction);
 
     // Create three buttons for deleting, highlighting and checking off food items & // Adding a CSS class to buttons for styling
     const button = document.createElement("button");
